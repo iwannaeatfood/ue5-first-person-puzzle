@@ -23,19 +23,12 @@ The `Content/` folder (about 32 GB) is not included because it contains licensed
 
 Individual project (single author). I built the levels and gameplay in Blueprint and spent a large part of the project troubleshooting input, UI and character-configuration problems that appeared when moving between levels (see "Project" above for the level list). The project's own content folders include `MainMenu`, `Input`, `Blueprints` and `Characters` next to the level folders.
 
-## What can and cannot be verified from this repository
+## What is and is not included
 
-- **Verifiable here:** the project file and configuration (engine version, enabled plugins, input / game / engine settings).
-- **Verifiable locally / on request:** the full project (`Content/`, about 32 GB), whose file timestamps run from September to November 2025 (sibling projects `week2` and `week3` from 23 Sep and 14 Oct 2025, the `MEMORY` project from late October to 27 Nov 2025), and a packaged Windows build of Level 3 (`MEMORY-Win64-Shipping.exe`, about 1.0 GB zip). I can run the build in an interview.
-- **Not included:** gameplay footage and screenshots. <!-- TODO(owner): add 2–3 screenshots or a 30-second capture from the packaged build under docs/ and link them here. -->
+- **In this repository:** the project file and configuration (engine version, enabled plugins, input / game / engine settings).
+- **Available on request:** the full project (`Content/`, about 32 GB), whose file timestamps run from September to November 2025 (sibling projects `week2` and `week3` from 23 Sep and 14 Oct 2025, the `MEMORY` project from late October to 27 Nov 2025), and a packaged Windows build of Level 3 (`MEMORY-Win64-Shipping.exe`, about 1.0 GB zip). It can be shown on request.
+- **Not included:** gameplay footage and screenshots.
 
 ## How to run
 
 Open `MEMORY.uproject` with Unreal Engine 5.6 only if you also have the licensed `Content/` folder; this repository alone will not open into a playable project. To see the game, use the packaged build above.
-
-## Facts to have ready for an interview
-
-- Blueprint-only project on Unreal Engine 5.6; no C++ source module.
-- Five level folders in the project (listed above); first-person puzzle gameplay (interaction, mechanisms, level switching) and a main-menu / input / UI layer.
-- Licensed third-party asset packs (Fab / Megascans and marketplace packs) provide the art; they are why `Content/` is not published.
-- A packaged Windows build of Level 3 exists and can be demonstrated.
