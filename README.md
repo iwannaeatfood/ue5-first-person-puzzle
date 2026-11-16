@@ -1,8 +1,8 @@
 ﻿# MEMORY — First-Person Puzzle Game (Unreal Engine 5)
 
-UNSW COMP9415 (game development elective), Term 3 2025 — individual project, September–November 2025.
+UNSW COMP9415 (game development elective), Term 3 2025 — course project, September–November 2025. A multi-level first-person puzzle game; I independently built and implemented one level.
 
-**中文简介**：使用 Unreal Engine 5.6 蓝图开发的第一人称解谜关卡项目（项目名 MEMORY）。本仓库只包含工程文件与配置；游戏内容资源因体积（约 32GB）和第三方素材授权无法上传。
+**中文简介**：UNSW COMP9415 游戏开发课程项目（项目名 MEMORY）：使用 Unreal Engine 5.6 蓝图开发的多关卡第一人称解谜游戏，我独立负责并实现其中一个关卡（场景搭建与玩家交互）。本仓库只包含工程文件与配置；游戏内容资源因体积（约 32GB）和第三方素材授权无法上传。
 
 ## Project
 
@@ -21,7 +21,13 @@ The `Content/` folder (about 32 GB) is not included because it contains licensed
 
 ## My contribution
 
-Individual project (single author). I built the levels and gameplay in Blueprint and spent a large part of the project troubleshooting input, UI and character-configuration problems that appeared when moving between levels (see "Project" above for the level list). The project's own content folders include `MainMenu`, `Input`, `Blueprints` and `Characters` next to the level folders.
+I independently built and implemented **one level** of the multi-level first-person puzzle game, in Blueprint: scene setup and player interaction. The details below are from my own project notes; the `Content/` folder is not in this repository, so they cannot be checked from the files here (the packaged build can be shown on request).
+
+- **Interaction system:** Line Trace detection of interactable objects, item pickup and inventory management; a "combine three items into a torch" mechanic linked to the scene's mechanisms.
+- **Level flow:** door-area detection and prompts with TriggerBox + Blueprint events; Open Level to connect levels, with separate GameMode / Character / Controller settings per level.
+- **Build and testing:** packaged and tested the Windows Shipping build; diagnosed and fixed cross-level UI, input and character-configuration problems.
+
+The level folders listed above belong to the whole game; this README does not say which parts are mine beyond the description here.
 
 ## What is and is not included
 
